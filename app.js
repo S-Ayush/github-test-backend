@@ -6,7 +6,7 @@ const app = express();
 const cookieParser = require("cookie-parser");
 const { path } = require("./authentication");
 const StarRepo = require("./modal/starRepoSchema");
-const authenticate = require("../middleware");
+const authenticate = require("./middleware/index");
 
 //allow cors origin
 app.use(
