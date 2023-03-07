@@ -9,7 +9,7 @@ const { path } = require("./authentication");
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000", "http://mnp-backend.herokuapp.com"],
+    origin: ["http://localhost:3000", "https://github-test-backend.vercel.app/"],
   })
 );
 
