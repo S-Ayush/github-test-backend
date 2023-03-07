@@ -6,7 +6,7 @@ const User = require("../modal/userSchema");
 
 router.use(cookieParser());
 
-const authenticate = require("../middleware");
+const authenticate = require("../middleware/index");
 const StarRepo = require("../modal/starRepoSchema");
 
 router.get("/userData", authenticate, async (req, res) => {
