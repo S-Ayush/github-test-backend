@@ -5,6 +5,7 @@ var cors = require("cors");
 const app = express();
 const cookieParser = require("cookie-parser");
 const { path } = require("./authentication");
+const StarRepo = require("./modal/starRepoSchema");
 //allow cors origin
 app.use(
   cors({
@@ -32,7 +33,7 @@ console.log(paths.join(__dirname, "public"));
 // });
 app.use(express.static(paths.resolve(__dirname, "public")));
 
-app.get(["/", "/login", "/dashboard", "/users", "/tasks"], (req, res) => {
+app.get(["/", "/login", "/dashboard"], (req, res) => {
   res.sendFile(paths.resolve(__dirname, "public", "index.html"));
 });
 
