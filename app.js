@@ -12,7 +12,7 @@ const authenticate = require("./middleware/index");
 app.use(
   cors({
     credentials: true,
-        origin: ["http://localhost:3000", "https://github-test-backend.vercel.app/"]
+    origin: ["http://localhost:3000", "https://github-test-backend.vercel.app/"],
   })
 );
 
